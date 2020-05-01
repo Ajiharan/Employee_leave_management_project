@@ -23,7 +23,7 @@
                         <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
                     </div>
                     <div class="nav-item">
-                        <a class="nav-link" to="/user/Register">Register</a>
+                        <a class="nav-link" href="../Employee_project/Register.php">Register</a>
                     </div>
                 
                     <div class="nav-item dropdown">
@@ -31,8 +31,8 @@
                     Login
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" >User-login</a>
-                            <a class="dropdown-item" >Admin-login</a>
+                            <a class="dropdown-item" href="../Employee_project/index.php" >User-login</a>
+                            <a class="dropdown-item" href="../Employee_project/admin_login.php" >Admin-login</a>
                     
                         </div>
                     </div>

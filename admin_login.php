@@ -16,7 +16,7 @@
   <div class="container myLoginContainer" id="login-container">
       <div class="container-box">
           <div>
-            <h4 class="text-center text-dark">Employee-Login</h4>
+            <h4 class="text-center text-dark">Admin-Login</h4>
           </div>
        
           <form autocomplete="off" id="frm">
@@ -34,7 +34,7 @@
               </div>            
             </div>
             <p class="text-dark">By continuing, you agree to Lancer's <a href="#">Conditions of Use and Privacy Notice</a> . </p>
-            <p class="text-dark text-center">If you don't have any account <a href="../Employee_project/register.php">Create an account</a> . </p>
+            
         </form>
       </div>
   </div>
@@ -47,7 +47,6 @@
 	      	submitHandler: function() {
             //console.log("Error");
               alert("submitted");
-              document.querySelector("#frm").reset();
             }
       });
       $("#frm").validate({
