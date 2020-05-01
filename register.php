@@ -1,4 +1,6 @@
-
+<?php
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +21,7 @@
             <h4 class="text-center text-dark">Employee-Register</h4>
           </div>
        
-          <form autocomplete="off" id="frm">
+          <form autocomplete="on" id="frm">
             <div class="form-group">
               <label for="email">Name</label>
               <input type="text" name="name"  class="form-control"  placeholder="Enter your Name" id="name">
@@ -57,8 +59,16 @@
      
       $.validator.setDefaults({
 	      	submitHandler: function() {
-            //console.log("Error");
-              alert("submitted");
+              $.ajax({
+                url:"./server/userRegister.php",
+                type:"post",
+                data:$("#frm").serialize(),
+                success:function(d){
+                  
+                  document.querySelector("#frm").reset();
+                  window.location.replace("./index.php");
+                }
+              });
             }
       });
       $("#frm").validate({
@@ -81,7 +91,7 @@
           cpass:{
             required:true,
             minlength:6,
-            equalTo:"#passwords"
+            equalTo:"#pass"
           }
          
         },

@@ -1,3 +1,7 @@
+<?php
+  session_start();
+
+?>
 
 
 <!DOCTYPE html>
@@ -12,8 +16,11 @@
   <?php 
     include('./header/header.php')
   ?>  
-
+      <div class="container" id="showMessage">
+        <h6 class="alert alert-success text-center" id="msg_alert"></h6>
+      </div>
   <div class="container myLoginContainer" id="login-container">
+     
       <div class="container-box">
           <div>
             <h4 class="text-center text-dark">Employee-Login</h4>
@@ -42,12 +49,31 @@
     <script src="js/jquery.validate.js"></script>
   <script>
     $(document).ready(function(){
+      $("#showMessage").hide();
+      <?php 
+        
+      if(isset( $_SESSION["register"])) {
+        ?>
+             $("#msg_alert").text("Registered Sucessfully");
+             $("#showMessage").show();
+             $("#showMessage").fadeOut(4000,function(){
+               <?php
+                unset($_SESSION["register"])
+                ?>
+             })
+
+    <?php  } else{?>
+      unset($_SESSION["register"])
+      $("#showMessage").hide();
+    <?php }?>
+     
      
       $.validator.setDefaults({
 	      	submitHandler: function() {
             //console.log("Error");
               alert("submitted");
               document.querySelector("#frm").reset();
+              
             }
       });
       $("#frm").validate({
