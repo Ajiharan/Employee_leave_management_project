@@ -1,3 +1,9 @@
-<?php  
-    echo "Hello";
+<?php 
+session_start();
+if(!isset($_SESSION['uid'])){
+    
+    header("Location:./index.php"); 
+    exit();
+} 
+    echo "Hello".$_SESSION['uid'];
 ?>
