@@ -11,41 +11,17 @@
     <title>Document</title>
 </head>
 <body>
-        <div class="navbar navbar-expand-lg navbar-dark bg-dark" id="top-nav">
+        <div class="navbar navbar-expand-lg navbar-info bg-light" id="top-nav">
             <div class="nav-logo">
                 <div>
                  <a class="navbar-brand" href="#"><h2>Lancer</h2></a>
                 </div>
             </div>
-            <?php 
-             if(!isset($_SESSION['uid'])){?>
-
-            
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="navbar-nav" id="div1">
-                   
-                    <div class="nav-item">
-                        <a class="nav-link" href="../Employee_project/Register.php">Register</a>
-                    </div>
-                
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Login
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="../Employee_project/index.php" >User-login</a>
-                            <a class="dropdown-item" href="../Employee_project/admin_login.php" >Admin-login</a>
-                    
-                        </div>
-                    </div>
-                
-                </div>      
-            </div>
-            <?php }else{ ?>
+                 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <div class="navbar-nav" id="div1">
                 <div class="nav-item active">
-                    <a href="../Employee_project/Home.php" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    <a href="../Employee_project/adminHome.php" class="nav-link">Home <span class="sr-only">(current)</span></a>
                 </div>             
             
             </div>
@@ -56,11 +32,11 @@
                 </div>
                 <div class="nav-item">
                     <a class="btn btn-dark text-light" href="../Employee_project/server/logout.php">Logout</a>
-                </div>;
+                </div>
 
             </div>
         </div>
-            <?php }?>
+          
 
          </div>
          <script src="https://kit.fontawesome.com/939ff5c0e6.js" crossorigin="anonymous"></script>

@@ -88,7 +88,7 @@
                     // alert("Invalid");
                   }
                   document.querySelector("#frm").reset();
-                  // window.location.replace("./Home.php");
+                  window.location.replace("./Home.php");
                 }
               });
             }

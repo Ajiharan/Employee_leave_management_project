@@ -1,12 +1,5 @@
 <?php 
-session_start();
-if(!isset($_SESSION['uid'])){
-    
-    header("Location:./index.php"); 
-    exit();
-} 
-  
-    
+ include('./header/admin_header.php')
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +10,6 @@ if(!isset($_SESSION['uid'])){
     <title>Document</title>
 </head>
 <body>
-<?php 
-    include('./header/header.php')
-  ?>   
+    
 </body>
 </html>

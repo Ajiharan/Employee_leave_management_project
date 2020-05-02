@@ -22,7 +22,7 @@
             $res->execute([$name,$dob,$email,$pass]);
             $_SESSION["register"]="Registered Sucessfully";
             echo 200;
-        
+            
         }
        
     }catch(PDOException $e){
