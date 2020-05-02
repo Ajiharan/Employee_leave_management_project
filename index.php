@@ -25,15 +25,15 @@
           <div>
             <h4 class="text-center text-dark">Employee-Login</h4>
           </div>
-       
-          <form autocomplete="off" id="frm">
+          <h6 class="text-center text-danger" id="log_error"></h6>
+          <form autocomplete="off" id="frm" >
             <div class="form-group">
               <label for="email">Email address:</label>
               <input type="email" name="email"  class="form-control"  placeholder="Enter email" id="email">
             </div>
             <div class="form-group">
               <label for="pwd">Password:</label>
-              <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" id="pwd">
+              <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" >
             </div>
             <div id="button-center">
               <div>
@@ -63,17 +63,30 @@
              })
 
     <?php  } else{?>
-      unset($_SESSION["register"])
+      // unset($_SESSION["register"])
       $("#showMessage").hide();
     <?php }?>
      
      
       $.validator.setDefaults({
-	      	submitHandler: function() {
-            //console.log("Error");
-              alert("submitted");
-              document.querySelector("#frm").reset();
-              
+	      	submitHandler: function() {     
+              // document.querySelector("#frm").reset();
+              $.ajax({
+                url:"./server/userLogin.php",
+                type:"post",
+                data:$("#frm").serialize(),
+                success:function(d){
+                  if(d==200){
+                    $("#log_error").text("");
+                    console.log(d);
+                  }else{
+                  $("#log_error").text("!!Invalid email_id or password");
+                    // alert("Invalid");
+                  }
+                  document.querySelector("#frm").reset();
+                  // window.location.replace("./Home.php");
+                }
+              });
             }
       });
       $("#frm").validate({

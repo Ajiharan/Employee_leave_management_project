@@ -20,7 +20,7 @@
           <div>
             <h4 class="text-center text-dark">Employee-Register</h4>
           </div>
-       
+          <h6 class="text-center text-danger" id="reglog_error"></h6>
           <form autocomplete="on" id="frm">
             <div class="form-group">
               <label for="email">Name</label>
@@ -36,11 +36,11 @@
             </div>
             <div class="form-group">
               <label for="pwd">Password:</label>
-              <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" id="pwd">
+              <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" >
             </div>
             <div class="form-group">
               <label for="pwd">Conform Password:</label>
-              <input type="password" name="cpass" id="cpass" class="form-control" placeholder="Enter conform password" id="pwd">
+              <input type="password" name="cpass" id="cpass" class="form-control" placeholder="Enter conform password" >
             </div>
             <div id="button-center">
               <div>
@@ -64,9 +64,20 @@
                 type:"post",
                 data:$("#frm").serialize(),
                 success:function(d){
+                  if(d==200){
+                    $("#reglog_error").text("");
+                    document.querySelector("#frm").reset();
+                   window.location.replace("./index.php");
+                    // console.log(d);
+                  }else if(d==400){
+                   $("#reglog_error").text("!!Email address already exists");
+                    $("#email").val("");
+                    $("#pass").val("");
+                    $("#cpass").val("");
+                  }else{
+                    alert(d);
+                  }
                   
-                  document.querySelector("#frm").reset();
-                  window.location.replace("./index.php");
                 }
               });
             }
