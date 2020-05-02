@@ -82,13 +82,13 @@
                 success:function(d){
                   if(d==200){
                     $("#log_error").text("");
-                    console.log(d);
+                    document.querySelector("#frm").reset();
+                    window.location.replace("./Home.php");
                   }else{
                   $("#log_error").text("!!Invalid email_id or password");
                     // alert("Invalid");
                   }
-                  document.querySelector("#frm").reset();
-                  window.location.replace("./Home.php");
+                 
                 }
               });
             }
