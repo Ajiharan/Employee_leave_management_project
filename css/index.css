@@ -168,3 +168,13 @@
     margin: 20px;
     width: 450px;
   }
+
+  #home-container{
+    background-color: rgb(65, 63, 63);
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding: 20px;
+    margin:100px;
+   
+  }
