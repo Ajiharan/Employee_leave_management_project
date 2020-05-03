@@ -61,28 +61,26 @@ if(!isset($_SESSION['uid'])){
         </div>
         
     </div>
-    <div class="leave-table">
+    <div class="leave-table table-responsive">
        <h4 class="text-dark text-center">Your Leave Details</h4>
-       <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                </tr>
-                
-            
-            </tbody>
-        </table>
+       <script>
+         $(document).ready(function(){
+            setInterval(function(){
+                $.ajax({
+                     url:"./server/employeeViewLeave.php",
+                     type:"GET",
+                     dataType: "html",               
+                     success:function(d){
+                         $(".leave-table").html(d);
+                                
+                     }
+                });
+
+             },1000);
+                  
+        });
+
+        </script>
 
 
     </div>
@@ -162,5 +160,7 @@ if(!isset($_SESSION['uid'])){
            });
       });
   </script>
+     <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 ?>
 
 <?php 
+    $uid=$_SESSION['uid'];
    
     $result="  <table class='table'>
     <thead class='thead-dark'>
@@ -22,9 +23,9 @@
     
     <tbody>";
  try{
-    $sql="select * from leave_details";
+    $sql="select * from leave_details where uid=?";
     $res=$con->prepare($sql);
-    $res->execute();
+    $res->execute([$uid]);
     $tot=$res->rowCount();
     if($tot > 0){
         $login_users=$res->fetchAll();
@@ -44,8 +45,8 @@
                 <td><i class='fa fa-ban text-danger' aria-hidden='true'></i></td>
             </tr>";
             }else{
-                $result.="<td><button class='btn btn-success' onclick='updateDetails($row->id)'>Accept</button></td>
-                <td><button class='btn btn-danger' onclick='updateRejectDetails($row->id)'>Reject</button></td>
+                $result.="<td>Not variefy</td>
+                <td>Not variefy</td>
             </tr>";
             }
             

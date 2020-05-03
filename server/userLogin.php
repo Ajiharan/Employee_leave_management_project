@@ -15,6 +15,7 @@
         if($tot > 0){
             $login_user=$res->fetch();
             $_SESSION['uid']=$login_user->id;
+            $_SESSION['uname']=$login_user->name;
             echo 200;
            
         }else{

@@ -48,5 +48,30 @@ if(!isset($_SESSION['aid'])){
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.validate.js"></script>
+    <script>
+        function updateDetails(id){
+        $.ajax({
+            url:"./server/leaveUpdate.php",
+            type:"POST",
+            data:{id:id},            
+            success:function(d){
+                    alert(d);
+                                
+                }
+            });
+        }
+
+        function updateRejectDetails(id){
+        $.ajax({
+            url:"./server/leaveReject.php",
+            type:"POST",
+            data:{id:id},            
+            success:function(d){
+                    alert(d);
+                                
+                }
+            });
+        }
+    </script>
 </body>
 </html>

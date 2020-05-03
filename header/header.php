@@ -9,6 +9,7 @@
     <meta name="theme-color" content="#000000" />
     <link href="./css/index.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css"/>
     <link href="./css/leave.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -53,7 +54,7 @@
             <div class="protect navbar-nav">
 
                 <div class="nav-item" id="profile">
-                    <a class="nav-link" href="#">profile</a>
+                    <a class="nav-link" href="#">Hi <?php echo $_SESSION['uname']?></a>
                 </div>
                 <div class="nav-item">
                     <a class="btn btn-dark text-light" href="../Employee_project/server/logout.php">Logout</a>
