@@ -13,7 +13,7 @@
     include('./header/header.php')
   ?>  
 
-  <div class="container myLoginContainer" id="login-container">
+  <div class="container myLoginContainer col-md-6 col-sm-12 col-lg-4" id="login-container">
       <div class="container-box">
           <div>
             <h4 class="text-center text-dark">Admin-Login</h4>

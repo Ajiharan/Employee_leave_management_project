@@ -23,9 +23,9 @@
       <div class="container" id="showMessage">
         <h6 class="alert alert-success text-center" id="msg_alert"></h6>
       </div>
-  <div class="container myLoginContainer" id="login-container">
+  <div class="container  myLoginContainer col-md-6 col-sm-12 col-lg-4" id="login-container">
      
-      <div class="container-box">
+      <div class="container-box mt-4 pt-3">
           <div>
             <h4 class="text-center text-dark">Employee-Login</h4>
           </div>
@@ -36,7 +36,7 @@
               <input type="email" name="email"  class="form-control"  placeholder="Enter email" id="email">
             </div>
             <div class="form-group">
-              <label for="pwd">Password:</label>
+              <label for="pass">Password:</label>
               <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" >
             </div>
             <div id="button-center">
@@ -44,7 +44,7 @@
                 <button type="submit" name="submit" class="btn btn-dark" id="btn_submit">Login</button>
               </div>            
             </div>
-            <p class="text-dark">By continuing, you agree to Lancer's <a href="#">Conditions of Use and Privacy Notice</a> . </p>
+            <p class="text-dark text-center">By continuing, you agree to Lancer's <a href="#">Conditions of Use and Privacy Notice</a> . </p>
             <p class="text-dark text-center">If you don't have any account <a href="../Employee_project/register.php">Create an account</a> . </p>
         </form>
       </div>

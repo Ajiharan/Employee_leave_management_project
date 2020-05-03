@@ -19,44 +19,46 @@
   <?php 
     include('./header/header.php')
   ?>  
-
-  <div class="container register-container" id="login-container">
-      <div class="container-box">
-          <div>
-            <h4 class="text-center text-dark">Employee-Register</h4>
-          </div>
-          <h6 class="text-center text-danger" id="reglog_error"></h6>
-          <form autocomplete="on" id="frm">
-            <div class="form-group">
-              <label for="email">Name</label>
-              <input type="text" name="name"  class="form-control"  placeholder="Enter your Name" id="name">
+  <div class="container">
+ 
+    <div class="container register-container col-md-6 col-sm-12 col-lg-6" id="login-container">
+        <div class="container-box">
+            <div>
+              <h4 class="text-center text-dark">Employee-Register</h4>
             </div>
-            <div class="form-group">
-              <label for="email">Date of Birth</label>
-              <input type="date" name="dob"  class="form-control"  placeholder="Enter Your Date of Birth" id="dob">
-            </div>
-            <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" name="email"  class="form-control"  placeholder="Enter email" id="email">
-            </div>
-            <div class="form-group">
-              <label for="pwd">Password:</label>
-              <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" >
-            </div>
-            <div class="form-group">
-              <label for="pwd">Conform Password:</label>
-              <input type="password" name="cpass" id="cpass" class="form-control" placeholder="Enter conform password" >
-            </div>
-            <div id="button-center">
-              <div>
-                <button type="submit" name="submit" class="btn btn-dark" id="btn_submit">Register</button>
-              </div>            
-            </div>
-            <p class="text-dark">By continuing, you agree to Lancer's <a href="#">Conditions of Use and Privacy Notice</a> . </p>
-            <p class="text-dark text-center">If you alredy have any account <a href="../Employee_project/index.php">Sign in</a> . </p>
-        </form>
-      </div>
-  </div>
+            <h6 class="text-center text-danger" id="reglog_error"></h6>
+            <form autocomplete="on" id="frm">
+              <div class="form-group">
+                <label for="email">Name</label>
+                <input type="text" name="name"  class="form-control"  placeholder="Enter your Name" id="name">
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob"  class="form-control"  placeholder="Enter Your Date of Birth" id="dob">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" name="email"  class="form-control"  placeholder="Enter email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter password" >
+              </div>
+              <div class="form-group">
+                <label for="cpass">Conform Password:</label>
+                <input type="password" name="cpass" id="cpass" class="form-control" placeholder="Enter conform password" >
+              </div>
+              <div id="button-center">
+                <div>
+                  <button type="submit" name="submit" class="btn btn-dark" id="btn_submit">Register</button>
+                </div>            
+              </div>
+              <p class="text-dark text-center">By continuing, you agree to Lancer's <a href="#">Conditions of Use and Privacy Notice</a> . </p>
+              <p class="text-dark text-center">If you alredy have any account <a href="../Employee_project/index.php">Sign in</a> . </p>
+          </form>
+        </div>
+    </div>
+</div>
   <script src="js/jquery.js"></script>
     <script src="js/jquery.validate.js"></script>
   <script>

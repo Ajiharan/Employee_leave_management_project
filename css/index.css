@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    opacity: 0.96;
+    margin: 0;
+    padding: 0;
   }
   
   #button-group{
@@ -71,7 +74,7 @@
       
     display: flex;
     justify-content:center;
-    align-items: center;
+  
     
   }
   
@@ -89,24 +92,23 @@
   }
 
   .myLoginContainer{
-    height:470px;
+    height:580px;
   }
   #login-container{
     margin-top:80px;
     margin-bottom: 10px;
     padding: 5px; 
-    width:500px;
+    width:90%;
    
     opacity: 0.91;
     background-color: white;
-    display:flex;
-    justify-content: center;
+   
     border-radius:1px;
     
   }
 
   .container-box div h4{
-    width:500px;
+   
     padding: 4px;
     box-shadow: 0px 0px 1px white;
    
@@ -177,4 +179,15 @@
     padding: 20px;
     margin:100px;
    
+  }
+
+  #leave-form-container{
+    background-color: white;
+    margin-top: 50px;
+    height:500px;
+  }
+
+  #leave-form-container label{
+    color:white;
+    box-shadow: 0px 0px 1px white;
   }

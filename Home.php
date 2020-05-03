@@ -29,28 +29,28 @@ if(!isset($_SESSION['uid'])){
                             <div class="card-body">
                                 <h5 class="card-title">Leave Materials</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="studentLogin.php"> <input type="button" value=" Take a leave" class='btn btn-dark'></a>
+                                <a href="./userLeave.php"> <input type="button" value=" Take a leave" class='btn btn-dark'></a>
                             </div>
                         </div>
                     </div>
                     
                     <div>
                         <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Staff Login</div>
+                            <div class="card-header">Employee Feedback</div>
                             <div class="card-body">
                                 <h5 class="card-title">Change The Future</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <input type="button" value=" Staff login" class='btn btn-dark'>
+                                <input type="button" value=" Take to Form" class='btn btn-dark'>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Admin Login</div>
+                            <div class="card-header">Report issues</div>
                             <div class="card-body">
                                 <h5 class="card-title">Maintain the Details</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <input type="button" value="Admin Login" class='btn btn-dark'>
+                                <input type="button" value="Take to Report" class='btn btn-dark'>
                             </div>
                         </div>
                     </div>

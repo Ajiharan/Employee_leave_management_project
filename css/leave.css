@@ -1,0 +1,64 @@
+
+#leave-top{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+#leave-top  .leave-table{
+    flex-grow: 1;
+}
+#leave-container{
+    margin-top:80px;
+    margin-bottom: 10px;
+    padding: 5px; 
+    width:500px;
+    height: auto;
+    opacity: 0.91;
+    background-color: white;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:1px;
+    
+  }
+
+
+  #leave-container form{
+    padding: 5px;
+    margin: 25px;
+  }
+
+  #leave-container form input{
+    border:none;
+    border-bottom:1px solid grey;
+    background-color: white;
+  }
+
+  
+  #leave-container form input:focus{
+   outline: none;
+    background-color: white;
+  }
+  
+ 
+
+  
+  #leave-container form input:focus{
+    box-shadow: inset 0 -1px 0 #ddd;
+    background-color: white;
+  }
+  #leave-container .form-control{
+
+    border-radius:0px;
+  }
+  
+  
+  #leave-container .error{
+    color:red;
+  }
+
+  .leave-table{
+      background-color: whitesmoke;
+      margin:40px;
+  }

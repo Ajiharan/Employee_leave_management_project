@@ -8,10 +8,11 @@
   
     <meta name="theme-color" content="#000000" />
     <link href="./css/index.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css"/>
+    <link href="./css/leave.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css"/>
     <title>Document</title>
 </head>
 <body>
-        <div class="navbar navbar-expand-lg navbar-dark bg-dark" id="top-nav">
+        <div class="navbar  navbar-dark bg-dark" id="top-nav">
             <div class="nav-logo">
                 <div>
                  <a class="navbar-brand" href="#"><h2>Lancer</h2></a>
