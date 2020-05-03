@@ -45,8 +45,8 @@
                 <td><i class='fa fa-ban text-danger' aria-hidden='true'></i></td>
             </tr>";
             }else{
-                $result.="<td>Not variefy</td>
-                <td>Not variefy</td>
+                $result.="<td>Not verify</td>
+                <td>Not verify</td>
             </tr>";
             }
             
