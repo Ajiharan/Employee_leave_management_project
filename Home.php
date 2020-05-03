@@ -40,7 +40,7 @@ if(!isset($_SESSION['uid'])){
                             <div class="card-body">
                                 <h5 class="card-title">Change The Future</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <input type="button" value=" Take to Form" class='btn btn-dark'>
+                                <a href="./userFeedback.php"><input type="button" value=" Take to Form" class='btn btn-dark'></a>
                             </div>
                         </div>
                     </div>
