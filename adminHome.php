@@ -20,5 +20,33 @@ if(!isset($_SESSION['aid'])){
 
     include('./header/admin_header.php')
 ?>
+    <div class="container">
+        <div class="row">
+          
+            <div class="emp-table table-responsive">
+                <h4 class="text-dark text-center">Employee leave Details</h4>
+              <script>
+                  $(document).ready(function(){
+                    setInterval(function(){
+                        $.ajax({
+                            url:"./server/view_employee_details.php",
+                            type:"GET",
+                            dataType: "html",               
+                            success:function(d){
+                                $(".emp-table").html(d);
+                                
+                            }
+                        });
+
+                     },1000);
+                  
+                  });
+
+            </script>
+            </div>
+        </di>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.validate.js"></script>
 </body>
 </html>

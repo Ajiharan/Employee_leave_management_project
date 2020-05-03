@@ -17,7 +17,7 @@
        
             $sql="insert into leave_details(name,email_id,details,uid,days,fro) values(?,?,?,?,?,?)";
             $res=$con->prepare($sql);
-            $res->execute([$name,$email,$reason,$uid,$days,$reason]);
+            $res->execute([$name,$email,$reason,$uid,$days,$dol]);
             $_SESSION["register"]="Registered Sucessfully";
             echo 200;    
     }catch(PDOException $e){

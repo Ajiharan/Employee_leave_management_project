@@ -61,4 +61,11 @@
   .leave-table{
       background-color: whitesmoke;
       margin:40px;
+      width: auto;
+  }
+
+  .emp-table{
+    margin: 10px;
+    background-color: rgb(241, 235, 235);
+    border-radius: 15px;
   }
